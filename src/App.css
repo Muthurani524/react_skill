@@ -1,38 +1,143 @@
+/*Day3
 .App {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  min-height: 100vh;       
+  background-image: url('react_day3.jpg'); 
+  background-size: 150%;  
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.counter-container {
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(68, 8, 8, 0.3);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+button{
+  background-color: pink;
+  color:rgb(228, 62, 62);
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.button:hover{
+  background-color: #d291ff;
+  color: rgb(124, 12, 12);
+}
+*/
+/*Day4*/
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Center box */
+.todo-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background: url("react_day4.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-box {
+  background:rgb(134, 132, 132); /* transparent box */
+  padding: 20px 0px 20px;
+  border-radius: 25px;
+  text-align: center;
+  width: 400px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.complete-btn {
+  background-color:green;
+  padding: 5px 5px 5px;
+  
+
+}
+.delete-btn {
+  background-color:red;
+  padding: 5px 5px 5px;
+}
+
+.message {
+  margin-top: 10px;
+  color:rgb(193, 193, 239);
+  font-weight: bold;
+}
+
+.task-list, .completed-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item, .completed-item {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed-toggle {
+  margin-top: 20px;
+}
+
+.completed-toggle button {
+  background-color:rgb(174, 211, 224);
+  color: rgb(135, 79, 79);
+  font-size: 16px;
 }
